@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/material_dynamic_neutral90">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width = "match_parent"
+        android:layout_height="60sp"
+        android:background="@color/dark_purple"
+        android:gravity="center"
+        android:text="Weight"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="25dp"
+        android:paddingLeft="20dp"
+        android:paddingBottom="25dp"
+        android:paddingRight="0dp">
+
+        <TextView
+            android:id="@+id/textValue"
+            android:layout_width="228dp"
+            android:layout_height="50dp"
+            android:background="@drawable/my_border"
+            android:gravity="center"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/textVoid2"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:gravity="center" />
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_border"
+            android:padding="15sp"
+            android:entries="@array/WeightArr"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="0dp"
+        android:paddingLeft="20dp"
+        android:paddingBottom="20dp"
+        android:paddingRight="0dp">
+
+        <TextView
+            android:id="@+id/textFirst"
+            android:layout_width="375dp"
+            android:layout_height="60dp"
+            android:background="@drawable/my_border"
+            android:gravity="center"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/textVoid3"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/textSecond"
+            android:layout_width="375dp"
+            android:layout_height="60dp"
+            android:background="@drawable/my_border"
+            android:gravity="center"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/textVoid4"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/textThird"
+            android:layout_width="375dp"
+            android:layout_height="60dp"
+            android:background="@drawable/my_border"
+            android:gravity="center"
+            android:textSize="30sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/my_border"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_one"
+                style="@style/NumberButton"
+                android:background="@drawable/my_border_number"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/btn_two"
+                style="@style/NumberButton"
+                android:background="@drawable/my_border_number"
+                android:text="2" />
+
+            <TextView
+                android:id="@+id/btn_three"
+                style="@style/NumberButton"
+                android:background="@drawable/my_border_number"
+                android:text="3" />
+
+            <TextView
+                android:id="@+id/btn_c"
+                style="@style/NumberButton"
+                android:background="@drawable/my_border_action"
+                android:text="C" />
+        </LinearLayout>
+        <!-- третий ряд -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_four"
+                style="@style/NumberButton"
+                android:background="@drawable/my_border_number"
+                android:text="4" />
+
+            <TextView
+                android:id="@+id/btn_five"
+                style="@style/NumberButton"
+                android:background="@drawable/my_border_number"
+                android:text="5" />
+
+            <TextView
+                android:id="@+id/btn_six"
+                style="@style/NumberButton"
+                android:background="@drawable/my_border_number"
+                android:text="6" />
+
+            <TextView
+                android:id="@+id/btn_backspace"
+                style="@style/NumberButton"
+                android:background="@drawable/my_border_action"
+                android:text="⌫"
+                android:textSize="30sp"/>
+        </LinearLayout>
+        <!-- четвертый ряд -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_seven"
+                style="@style/NumberButton"
+                android:background="@drawable/my_border_number"
+                android:text="7" />
+
+            <TextView
+                android:id="@+id/btn_eight"
+                style="@style/NumberButton"
+                android:background="@drawable/my_border_number"
+                android:text="8" />
+
+            <TextView
+                android:id="@+id/btn_nine"
+                style="@style/NumberButton"
+                android:background="@drawable/my_border_number"
+                android:text="9" />
+
+            <TextView
+                android:id="@+id/btn_enter"
+                style="@style/NumberButton"
+                android:background="@drawable/my_border_action"
+                android:text="Enter"
+                android:textSize="30sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                style="@style/NumberButton"
+                android:text="0"
+                android:layout_weight="2"
+                android:background="@drawable/my_border_number"
+                android:id="@+id/btn_zero"
+                />
+            <TextView
+                style="@style/NumberButton"
+                android:text="."
+                android:background="@drawable/my_border_number"
+
+                android:id="@+id/btn_dot"
+                />
+            <TextView
+                style="@style/NumberButton"
+                android:background="@drawable/my_border_action"
+                android:text="Go back"
+                android:textSize="30sp"
+                android:id="@+id/btn_back"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
